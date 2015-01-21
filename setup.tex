@@ -1,0 +1,199 @@
+%
+% PROJECT: <ETD> Electronic Thesis and Dissertation Initiative
+%   TITLE: LaTeX report template for ETDs in LaTeX
+%  AUTHOR: Neill Kipp, nkipp@vt.edu
+%     URL: http://etd.vt.edu/latex/
+% SAVE AS: etd.tex
+% REVISED: September 6, 1997 [GMc 8/30/10]
+%
+% Ported to MultiMarkdown by various members of TREC in 2014-2015.
+
+% Instructions: Remove the data from this document and replace it with your own,
+  % keeping the style and formatting information intact.  More instructions
+  % appear on the Web site listed above.
+
+\documentclass[12pt]{report}
+
+\usepackage{usnomencl}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\ifx\useurl\undefined
+\else
+\usepackage{url}
+\usepackage{hyperref}
+\fi
+\usepackage{booktabs}     % Better tables
+\usepackage{tabulary}     % Support longer table cells
+\usepackage[square, numbers]{natbib}
+
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{0in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.1in}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\pagenumbering{roman}
+
+\begin{center}
+
+
+
+% Title
+{\Large
+\mytitle
+}
+
+
+\vfill
+
+
+% Author name
+\myauthor
+
+
+\vfill
+
+
+% Type of submission (e.g., Thesis or Dissertation)
+\myreporttype \,submitted to the Faculty of the \\
+Virginia Polytechnic Institute and State University \\
+in partial fulfillment of the requirements for the degree of
+
+
+\vfill
+
+
+% Type of Degree
+\mydegree \\
+in \\
+\mydepartment
+
+
+\vfill
+
+
+% List of commitee members
+\mycommittee
+
+
+\vfill
+
+
+% Date and Location
+\mydate \\
+Blacksburg, Virginia
+
+
+\vfill
+
+
+% List of keywords
+Keywords: \mykeywords \\
+Copyright 2014, \myauthor
+
+
+\end{center}
+
+
+\pagebreak
+
+
+\thispagestyle{empty}
+
+\begin{center}
+
+
+{\large \mytitle}
+
+
+\vfill
+
+
+\myauthor
+
+
+\vfill
+
+
+% Abstract
+(ABSTRACT)
+
+
+\vfill
+
+
+\end{center}
+
+\myabstract
+
+
+\vfill
+
+
+% Grant Information
+\ifx\mygrants\undefined
+\else
+  \mygrants
+\fi
+
+\pagebreak
+
+
+% Dedication and Acknowledgments are both optional
+\ifx\mydedication\undefined
+\else
+\chapter*{Dedication}
+  \mydedication
+\fi
+
+\ifx\myacknowledgements\undefined
+\else
+  \chapter*{Acknowledgments}
+  \myacknowledgements
+\fi
+
+\pagebreak
+
+
+% Table of Contents
+\tableofcontents
+
+\pagebreak
+
+
+% List of Figures
+\listoffigures
+
+\pagebreak
+
+
+% List of Tables
+\listoftables
+
+\pagebreak
+
+\pagenumbering{arabic}
+
+\pagestyle{myheadings}
+
+
+%Macros
+\hyphenpenalty=500
+\tolerance=2000
+\emergencystretch=10pt
+\newcommand{\V}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
+\newcommand{\arraybegin}[1]{\begin{IEEEeqnarraybox*}[][c]{#1}}
+\newcommand{\arrayend}{\end{IEEEeqnarraybox*}}
+\newcommand{\unaryminus}{\scalebox{0.75}[1.0]{\( - \)}}
+\newcommand{\ubar}[1]{\underaccent{\bar}{#1}}
