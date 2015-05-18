@@ -28,7 +28,12 @@
 \fi
 \usepackage{booktabs}     % Better tables
 \usepackage{tabulary}     % Support longer table cells
-\usepackage[square, numbers]{natbib}
+\usepackage[
+    backend=biber,
+    natbib=true,
+    sorting=none
+]{biblatex}
+\addbibresource{\mybibliography}
 \usepackage[utf8]{inputenc}
 
 \setlength{\textwidth}{6.5in}
