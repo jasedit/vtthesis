@@ -32,7 +32,8 @@
     natbib=true,
     sorting=none
 ]{biblatex}
-\addbibresource{\mybibliography}
+\renewcommand{\bibliography}[1]{\addbibresource{#1.bib}}
+\bibliocommand
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}     % Set desired linespacing
 
