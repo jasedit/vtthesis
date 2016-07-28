@@ -4,7 +4,7 @@ This repository contains a LaTeX template that matches the requirements of Virgi
 
 # Instructions
 
-This template integrates with the paper system available [here](https://github.com/trecvt-oss/papers_base). This template can be cloned into a directory under the templates directory, and then used by having the following lines in the MMD metadata:
+This template integrates with the paper system available [here](https://github.com/jasedit/papers_base). This template can be cloned into a directory under the templates directory, and then used by having the following lines in the MMD metadata:
 
 ```
 latex input: vtthesis/setup.tex
