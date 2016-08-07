@@ -11,7 +11,7 @@
 % Instructions: Remove the data from this document and replace it with your own,
   % keeping the style and formatting information intact.  More instructions
   % appear on the Web site listed above.
-
+\IfFileExists{./metadata.tex}{\input{./metadata.tex}}{}
 \documentclass[12pt]{report}
 
 \usepackage{usnomencl}
@@ -27,6 +27,10 @@
 \usepackage{hyperref}
 \usepackage{booktabs}     % Better tables
 \usepackage{tabulary}     % Support longer table cells
+
+%Correctly reacting to definition of bibliography to optionally enable biber
+\ifx\bibliocommand\undefined
+\else
 \usepackage[
     backend=biber,
     natbib=true,
@@ -34,6 +38,8 @@
 ]{biblatex}
 \renewcommand{\bibliography}[1]{\addbibresource{#1.bib}}
 \bibliocommand
+\fi
+
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}     % Set desired linespacing
 
