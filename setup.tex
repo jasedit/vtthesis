@@ -104,12 +104,19 @@ in \\
 
 
 % Date and Location
+\ifx\mydate\undefined
+\def\mydate{\today}
+\fi
 \mydate \\
 Blacksburg, Virginia
 
 
 \vfill
 
+%If year is undefined, use the current year
+\ifx\myyear\undefined
+\def\myyear{\year}
+\fi
 
 % List of keywords
 Keywords: \mykeywords \\
