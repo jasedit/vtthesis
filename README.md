@@ -26,7 +26,7 @@ Variables have two potential configuration points, which will be described here.
 ## LaTeX/Metadata Variables
 
 1. `myabstract` - if this LaTeX variable is defined, the variable will be inserted as the abstract for the paper. This overrides the `abstract` variable
-2. `abstract` - if this LaTeX variable is defined, include the contents of the file named as the abstract.
+2. `abstract`, `$ABSTRACT` - if this LaTeX variable is defined, include the contents of the file named as the abstract.
 3. `myacknowledgements`, `$ACKNOWLEDGEMENTS` - If defined, the value of this variable will be inserted as acknowledgements
 4. `mykeywords`, `$KEYWORDS` - Keywords which are inserted into the document for metadata purposes
 5. `mycommittee`, `$COMMITTEE` - List of committee members to place on cover page. This is unfiltered, so raw LaTeX is fully supported for multi-line and odd names
