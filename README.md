@@ -30,3 +30,4 @@ Variables have two potential configuration points, which will be described here.
 3. `myacknowledgements`, `$ACKNOWLEDGEMENTS` - If defined, the value of this variable will be inserted as acknowledgements
 4. `mykeywords`, `$KEYWORDS` - Keywords which are inserted into the document for metadata purposes
 5. `mycommittee`, `$COMMITTEE` - List of committee members to place on cover page. This is unfiltered, so raw LaTeX is fully supported for multi-line and odd names
+6. `mylinespace` - If defined, sets the line spacing of the document using the [setspace](http://www.ctan.org/tex-archive/macros/latex/contrib/setspace/) package.
