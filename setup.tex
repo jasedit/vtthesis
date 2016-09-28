@@ -166,8 +166,42 @@ ABSTRACT
 \input{\myabstract}
 \fi
 
+\ifx\mypublicabstract\undefined
+\else
 \vfill
 
+\pagebreak
+
+\begin{center}
+
+
+{\large \mytitle}
+
+
+\vfill
+
+
+\myauthor
+
+
+\vfill
+
+
+% Abstract
+ABSTRACT
+
+
+\vfill
+
+
+\end{center}
+
+
+\input{\mypublicabstract}
+
+\vfill
+
+\fi
 
 % Grant Information
 \ifx\mygrants\undefined
