@@ -159,14 +159,8 @@ Copyright \myyear, \myauthor
 % If myabstract is defined, use it
 \ifx\myabstract\undefined
 
-% If abstract is defined, attempt to include it
-\ifx\abstract\undefined
 \else
-\input{\abstract}
-\fi
-
-\else
-\myabstract
+\input{\myabstract}
 \fi
 
 \vfill
