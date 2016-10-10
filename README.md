@@ -18,16 +18,16 @@ Variables have two potential configuration points, which will be described here.
 ## MultiMarkdown Frontmatter
 1. `latex author`,`$AUTHOR` - name of the paper author
 2. `latex title`, `$TITLE` - title of the document
-3. `bibtex`, `$BIBTEX` - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
-4. `myreporttype`, `$REPORTTYPE` - The document type displayed on the cover page, should be either `Thesis` for Masters students or `Dissertation` for PhD students
-5. `mydegree`, `$DEGREE` - The degree that is being awarded with this document. This should be the full degree, so `Masters of Science`, not simply `Masters`.
-6. `mydepartment`, `$DEPARTMENT` - The Department which is awarding this degree
+3. `abstract`, `$ABSTRACT` - defines the name of the file to include directly into the LaTeX output as the abstract
+4. `public abstract`, `$PUBLIC_ABSTRACT` - define the name of the file to include directly into the LaTeX output as the abstract
+4. `bibtex`, `$BIBTEX` - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
+5. `myreporttype`, `$REPORTTYPE` - The document type displayed on the cover page, should be either `Thesis` for Masters students or `Dissertation` for PhD students
+6. `mydegree`, `$DEGREE` - The degree that is being awarded with this document. This should be the full degree, so `Masters of Science`, not simply `Masters`.
+7. `mydepartment`, `$DEPARTMENT` - The Department which is awarding this degree
 
 ## LaTeX/Metadata Variables
 
-1. `myabstract` - if this LaTeX variable is defined, the variable will be inserted as the abstract for the paper. This overrides the `abstract` variable
-2. `abstract`, `$ABSTRACT` - if this LaTeX variable is defined, include the contents of the file named as the abstract.
-3. `myacknowledgements`, `$ACKNOWLEDGEMENTS` - If defined, the value of this variable will be inserted as acknowledgements
-4. `mykeywords`, `$KEYWORDS` - Keywords which are inserted into the document for metadata purposes
-5. `mycommittee`, `$COMMITTEE` - List of committee members to place on cover page. This is unfiltered, so raw LaTeX is fully supported for multi-line and odd names
-6. `mylinespace` - If defined, sets the line spacing of the document using the [setspace](http://www.ctan.org/tex-archive/macros/latex/contrib/setspace/) package.
+1. `myacknowledgements`, `$ACKNOWLEDGEMENTS` - If defined, the value of this variable will be inserted as acknowledgements
+2. `mykeywords`, `$KEYWORDS` - Keywords which are inserted into the document for metadata purposes
+3. `mycommittee`, `$COMMITTEE` - List of committee members to place on cover page. This is unfiltered, so raw LaTeX is fully supported for multi-line and odd names
+4. `mylinespace` - If defined, sets the line spacing of the document using the [setspace](http://www.ctan.org/tex-archive/macros/latex/contrib/setspace/) package.

@@ -27,6 +27,8 @@
 \usepackage{booktabs}     % Better tables
 \usepackage{tabulary}     % Support longer table cells
 
+\renewcommand*{\chapterautorefname}{Chapter}
+
 %Correctly reacting to definition of bibliography to optionally enable biber
 \ifx\bibliocommand\undefined
 \else
@@ -109,7 +111,10 @@ in \\
 \def\mydate{\today}
 \fi
 \mydate \\
+\ifx\mydefenselocation\undefined
 Blacksburg, Virginia
+\else
+\fi
 
 
 \vfill
@@ -148,7 +153,7 @@ Copyright \myyear, \myauthor
 
 
 % Abstract
-(ABSTRACT)
+Academic Abstract
 
 
 \vfill
@@ -163,8 +168,44 @@ Copyright \myyear, \myauthor
 \input{\myabstract}
 \fi
 
+\ifx\mypublicabstract\undefined
+\else
 \vfill
 
+\pagebreak
+
+\thispagestyle{empty}
+
+\begin{center}
+
+
+{\large \mytitle}
+
+
+\vfill
+
+
+\myauthor
+
+
+\vfill
+
+
+% Abstract
+Public Abstract
+
+
+\vfill
+
+
+\end{center}
+
+
+\input{\mypublicabstract}
+
+\vfill
+
+\fi
 
 % Grant Information
 \ifx\mygrants\undefined
