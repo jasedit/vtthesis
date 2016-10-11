@@ -18,8 +18,8 @@ Variables have two potential configuration points, which will be described here.
 ## MultiMarkdown Frontmatter
 1. `latex author`,`$AUTHOR` - name of the paper author
 2. `latex title`, `$TITLE` - title of the document
-3. `abstract`, `$ABSTRACT` - defines the name of the file to include directly into the LaTeX output as the abstract
-4. `public abstract`, `$PUBLIC_ABSTRACT` - define the name of the file to include directly into the LaTeX output as the abstract
+3. `my abstract`, `$ABSTRACT` - defines the name of the file to include directly into the LaTeX output as the abstract
+4. `my public abstract`, `$PUBLIC_ABSTRACT` - define the name of the file to include directly into the LaTeX output as the abstract
 4. `bibtex`, `$BIBTEX` - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
 5. `myreporttype`, `$REPORTTYPE` - The document type displayed on the cover page, should be either `Thesis` for Masters students or `Dissertation` for PhD students
 6. `mydegree`, `$DEGREE` - The degree that is being awarded with this document. This should be the full degree, so `Masters of Science`, not simply `Masters`.
