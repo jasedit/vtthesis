@@ -20,10 +20,11 @@ Variables have two potential configuration points, which will be described here.
 2. `latex title`, `$TITLE` - title of the document
 3. `my abstract`, `$ABSTRACT` - defines the name of the file to include directly into the LaTeX output as the abstract
 4. `my public abstract`, `$PUBLIC_ABSTRACT` - define the name of the file to include directly into the LaTeX output as the abstract
-4. `bibtex`, `$BIBTEX` - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
-5. `myreporttype`, `$REPORTTYPE` - The document type displayed on the cover page, should be either `Thesis` for Masters students or `Dissertation` for PhD students
-6. `mydegree`, `$DEGREE` - The degree that is being awarded with this document. This should be the full degree, so `Masters of Science`, not simply `Masters`.
-7. `mydepartment`, `$DEPARTMENT` - The Department which is awarding this degree
+5. `bibtex`, `$BIBTEX` - defines the Bibtex file to process for this document. Delete this line to eliminate bibliography support
+6. `myreporttype`, `$REPORTTYPE` - The document type displayed on the cover page, should be either `Thesis` for Masters students or `Dissertation` for PhD students
+7. `mydegree`, `$DEGREE` - The degree that is being awarded with this document. This should be the full degree, so `Masters of Science`, not simply `Masters`.
+8. `mydepartment`, `$DEPARTMENT` - The Department which is awarding this degree
+9. `mypackages` - If defined, includes the value of this key as a filename in the document preamble, allowing for custom packages and commands to be included
 
 ## LaTeX/Metadata Variables
 
