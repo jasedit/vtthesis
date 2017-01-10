@@ -10,4 +10,14 @@
 \else
 \printbibliography
 \fi
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Appendices}
+
+\ifx\myappendix\undefined
+\else
+\appendix
+\input{\myappendix}
+\fi
 }
