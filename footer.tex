@@ -11,13 +11,11 @@
 \printbibliography
 \fi
 
+\ifdefined\myappendices
 \clearpage
 \pagestyle{plain}
 \phantomsection
 \addcontentsline{toc}{chapter}{Appendices}
-
-\ifx\myappendices\undefined
-\else
 \appendix
 \input{\myappendices}
 \fi
