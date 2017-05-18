@@ -1,10 +1,21 @@
 # Overview
 
-This repository contains a LaTeX template that matches the requirements of Virginia Tech's Electronic Thesis and Dissertation (ETD) repository. This template has been refactored to integrate with the MultiMarkdown LaTeX conversion system, for easier writing.
+This repository contains a LaTeX template that matches the requirements of Virginia Tech's [Electronic Thesis and Dissertation](http://etd.vt.edu/) (ETD) repository. This template has been refactored to integrate with [scriptorium](https://github.com/jasedit/scriptorium), for easier writing.
 
 # Instructions
 
-This template integrates with the paper system available [here](https://github.com/jasedit/papers_base). This template can be cloned into a directory under the templates directory, and then used by having the following lines in the MMD metadata:
+After installing scriptorium, this template can be installed with the command:
+
+```
+scriptorium template -i https://github.com/jasedit/vtthesis.git
+```
+And a new paper created in the directory `$paper` using this template by executing:
+
+```
+scriptorium paper new -t vtthesis $paper
+```
+
+Or, to shift an existing paper to this template, ensure the two lines in the document frontmatter including the LaTeX files read:
 
 ```
 latex input: vtthesis/setup.tex
