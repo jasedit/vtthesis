@@ -13,7 +13,6 @@
   % appear on the Web site listed above.
 \documentclass[12pt]{report}
 
-\usepackage{usnomencl}
 \usepackage{graphics}
 \usepackage{graphicx}
 \usepackage{subfigure}
@@ -26,6 +25,12 @@
 \usepackage{hyperref}
 \usepackage{booktabs}     % Better tables
 \usepackage{tabulary}     % Support longer table cells
+
+\ifdefined\myglossary
+\usepackage[toc,acronym,xindy,nomain,nonumberlist,nopostdot]{glossaries}
+
+\makeglossaries
+\fi
 
 \renewcommand*{\chapterautorefname}{Chapter}
 %Allow for importation of custom packages on a per-user basis
@@ -253,6 +258,14 @@ Public Abstract
 \listoftables
 
 \pagebreak
+
+\ifdefined\myglossary
+\input{\myglossary}
+% Glossaries
+\printglossaries
+\pagebreak
+\fi
+
 
 \pagenumbering{arabic}
 

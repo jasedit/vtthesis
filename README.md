@@ -24,8 +24,9 @@ Variables have two potential configuration points, which will be described here.
 6. `myappendices`, `$APPENDICES` - defines the name of the file to include directly into the LaTeX output as the appendices. Not required.
 6. `myreporttype`, `$REPORTTYPE` - The document type displayed on the cover page, should be either `Thesis` for Masters students or `Dissertation` for PhD students
 7. `mydegree`, `$DEGREE` - The degree that is being awarded with this document. This should be the full degree, so `Masters of Science`, not simply `Masters`.
-8. `mydepartment`, `$DEPARTMENT` - The Department which is awarding this degree
-9. `mypackages` - If defined, includes the value of this key as a filename in the document preamble, allowing for custom packages and commands to be included
+8. `my department`, `$DEPARTMENT` - The Department which is awarding this degree
+9. `my packages` - If defined, includes the value of this key as a filename in the document preamble, allowing for custom packages and commands to be included
+10. `my glossary` - If defined, includes the named file and enables glossary support using the [glossaries](https://www.ctan.org/pkg/glossaries) package.
 
 ## LaTeX/Metadata Variables
 
