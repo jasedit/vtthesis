@@ -1,10 +1,21 @@
 # Overview
 
-This repository contains a LaTeX template that matches the requirements of Virginia Tech's Electronic Thesis and Dissertation (ETD) repository. This template has been refactored to integrate with the MultiMarkdown LaTeX conversion system, for easier writing.
+This repository contains a LaTeX template that matches the requirements of Virginia Tech's [Electronic Thesis and Dissertation](http://etd.vt.edu/) (ETD) repository. This template has been refactored to integrate with [scriptorium](https://github.com/jasedit/scriptorium), for easier writing.
 
 # Instructions
 
-This template integrates with the paper system available [here](https://github.com/jasedit/papers_base). This template can be cloned into a directory under the templates directory, and then used by having the following lines in the MMD metadata:
+After installing scriptorium, this template can be installed with the command:
+
+```
+scriptorium template -i https://github.com/jasedit/vtthesis.git
+```
+And a new paper created in the directory `$paper` using this template by executing:
+
+```
+scriptorium paper new -t vtthesis $paper
+```
+
+Or, to shift an existing paper to this template, ensure the two lines in the document frontmatter including the LaTeX files read:
 
 ```
 latex input: vtthesis/setup.tex
@@ -24,8 +35,9 @@ Variables have two potential configuration points, which will be described here.
 6. `myappendices`, `$APPENDICES` - defines the name of the file to include directly into the LaTeX output as the appendices. Not required.
 6. `myreporttype`, `$REPORTTYPE` - The document type displayed on the cover page, should be either `Thesis` for Masters students or `Dissertation` for PhD students
 7. `mydegree`, `$DEGREE` - The degree that is being awarded with this document. This should be the full degree, so `Masters of Science`, not simply `Masters`.
-8. `mydepartment`, `$DEPARTMENT` - The Department which is awarding this degree
-9. `mypackages` - If defined, includes the value of this key as a filename in the document preamble, allowing for custom packages and commands to be included
+8. `my department`, `$DEPARTMENT` - The Department which is awarding this degree
+9. `my packages` - If defined, includes the value of this key as a filename in the document preamble, allowing for custom packages and commands to be included
+10. `my glossary` - If defined, includes the named file and enables glossary support using the [glossaries](https://www.ctan.org/pkg/glossaries) package.
 
 ## LaTeX/Metadata Variables
 

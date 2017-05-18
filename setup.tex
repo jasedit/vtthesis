@@ -13,7 +13,6 @@
   % appear on the Web site listed above.
 \documentclass[12pt]{report}
 
-\usepackage{usnomencl}
 \usepackage{graphics}
 \usepackage{graphicx}
 \usepackage{subfigure}
@@ -26,6 +25,12 @@
 \usepackage{hyperref}
 \usepackage{booktabs}     % Better tables
 \usepackage{tabulary}     % Support longer table cells
+
+\ifdefined\myglossary
+\usepackage[toc,acronym,xindy,nomain,nonumberlist,nopostdot]{glossaries}
+
+\makeglossaries
+\fi
 
 \renewcommand*{\chapterautorefname}{Chapter}
 %Allow for importation of custom packages on a per-user basis
@@ -254,6 +259,14 @@ Public Abstract
 
 \pagebreak
 
+\ifdefined\myglossary
+\input{\myglossary}
+% Glossaries
+\printglossaries
+\pagebreak
+\fi
+
+
 \pagenumbering{arabic}
 
 \pagestyle{myheadings}
@@ -263,14 +276,3 @@ Public Abstract
 \else
   \mylinespace
 \fi
-
-%Macros
-\hyphenpenalty=500
-\tolerance=2000
-\emergencystretch=10pt
-\newcommand{\V}[1]{\boldsymbol{\mathbf{#1}}}
-\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
-\newcommand{\arraybegin}[1]{\begin{IEEEeqnarraybox*}[][c]{#1}}
-\newcommand{\arrayend}{\end{IEEEeqnarraybox*}}
-\newcommand{\unaryminus}{\scalebox{0.75}[1.0]{\( - \)}}
-\newcommand{\ubar}[1]{\underaccent{\bar}{#1}}
