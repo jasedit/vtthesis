@@ -38,6 +38,7 @@ Variables have two potential configuration points, which will be described here.
 8. `my department`, `$DEPARTMENT` - The Department which is awarding this degree
 9. `my packages` - If defined, includes the value of this key as a filename in the document preamble, allowing for custom packages and commands to be included
 10. `my glossary` - If defined, includes the named file and enables glossary support using the [glossaries](https://www.ctan.org/pkg/glossaries) package.
+11. `my date` - If defined, is the string which is used to represent the date on the title page.
 
 ## LaTeX/Metadata Variables
 
