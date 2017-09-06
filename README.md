@@ -12,7 +12,7 @@ scriptorium template -i https://github.com/jasedit/vtthesis.git
 And a new paper created in the directory `$paper` using this template by executing:
 
 ```
-scriptorium paper new -t vtthesis $paper
+scriptorium new -t vtthesis $paper
 ```
 
 Or, to shift an existing paper to this template, ensure the two lines in the document frontmatter including the LaTeX files read:
